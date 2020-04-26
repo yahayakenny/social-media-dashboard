@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+ <div class="header">
+   <div class="text">
+    <p>Social Media Dashboard</p><br>
+    <p>Total Followers: 23004</p>
+   </div>
+
+   <div class = "toggle">
+    <input type ="checkbox" class="checkbox" id ="checkbox">
+    <label for ="checkbox" class="label">
+     <i class="fas fa-moon"></i>
+     <i class="fas fa-sun"></i>
+    <div class="ball"></div>
+    </label>
+  </div>
+ </div>
+
+ <!-- TOP LEVEL CARDS -->
+
+ 
+ <div class="top-cards">
+   <div class="card">
+    <p>
+      <img alt="Facebook icon" src="./images/icon-facebook.svg" />
+      <span> @Yahaya Kehinde</span>
+    </p>
+    <p class="follower-number">780</p>
+    <p class="followers">Followers</p>
+    <p class="green">
+      <img alt="Up arrow" src="./images/icon-up.svg" />
+      <span> 12 Today</span>
+    </p>
+     
+   </div>
+   <div class="card">
+    <p>
+      <img alt="Facebook icon" src="./images/icon-twitter.svg" />
+      <span> @Yahaya_HK</span>
+    </p>
+    <p class="follower-number">1044</p>
+    <p class="followers">Followers</p>
+    <p class="green">
+      <img alt="Up arrow" src="./images/icon-up.svg" />
+      <span> 99 Today</span>
+    </p>
+
+   </div>
+
+   <div class="card">
+    <p>
+      <img alt="Facebook icon" src="./images/icon-instagram.svg" />
+      <span> @yahayakenny</span>
+    </p>
+    <p class="follower-number">2000</p>
+    <p class="followers">Followers</p>
+    <p class="green">
+      <img alt="Up arrow" src="./images/icon-up.svg" />
+      <span> 69 Today</span>
+    </p>
+
+   </div>
+
+
+   <div class="card">
+    <p>
+      <img alt="Facebook icon" src="./images/icon-youtube.svg" />
+      <span> @yahayakenny</span>
+    </p>
+    <p class="follower-number">1104</p>
+    <p class="followers">Followers</p>
+    <p class="green">
+      <img alt="Up arrow" src="./images/icon-up.svg" />
+      <span> 70 Today</span>
+    </p>
+   </div>
+
+ </div>
+
+ <!-- OVERVIEW CARDS -->
+
+ <div class="overview">
+  <p>Overview-Today</p>
+</div>
+
+<div class="overview-cards">
+  <div class="card-item">
+  
+     <div class='top-content'>
+      <div><p>Page Views </p></div>
+       <div class="num">87</div>
+      
+    </div>
+
+    <div class="bottom-content">
+      <div> <img src="./images/icon-facebook.svg"></div>
+
+      <div class="image-2"
+    ><img alt="Up arrow" src="./images/icon-up.svg"/> 3%
+     </div>
+
+    </div>
+    
+    
+   
+   
+    
+  </div>
+
+  <div class="card-item">
+   
+    <div class='top-content'>
+      <div><p>Likes </p></div>
+       <div class="num">52</div>
+      
+    </div>
+    <div class="bottom-content">
+      <div> <img src="./images/icon-facebook.svg"></div>
+
+      <div class="image-2"
+    ><img alt="Up arrow" src="./images/icon-up.svg"/> -2%
+     </div>
+
+    </div>
+
+  </div>
+
+  <div class="card-item">
+  
+    <div class='top-content'>
+      <div><p>Likes </p></div>
+       <div class="num">2300</div>
+      
+    </div>
+    <div class="bottom-content">
+      <div> <img src="./images/icon-instagram.svg"></div>
+
+      <div class="image-2"
+    ><img alt="Up arrow" src="./images/icon-up.svg"/> 25%
+     </div>
+
+    </div>
+
+  </div>
+
+  <div class="card-item">
+  
+    <div class='top-content'>
+      <div><p>Profile views </p></div>
+       <div class="num">52k</div>
+      
+    </div>
+    <div class="bottom-content">
+      <div> <img src="./images/icon-instagram.svg"></div>
+
+      <div class="image-2"
+    ><img alt="Up arrow" src="./images/icon-up.svg"/> 75%
+     </div>
+
+    </div>
+
+
+  </div>
+
+ 
+</div>
+
+<div class="overview-cards-2">
+  <div class="card-item-2">
+    
+   
+    <div class='top-content'>
+      <div><p>Retweets </p></div>
+       <div class="num">180</div>
+      
+    </div>
+    <div class="bottom-content">
+      <div> <img src="./images/icon-twitter.svg"></div>
+
+      <div class="image-2"
+    ><img alt="Up arrow" src="./images/icon-up.svg"/> 75%
+     </div>
+
+    </div>
+    
+  </div>
+
+  <div class="card-item-2">
+  
+    <div class='top-content'>
+      <div><p> Likes </p></div>
+       <div class="num">117</div>
+      
+    </div>
+    <div class="bottom-content">
+      <div> <img src="./images/icon-twitter.svg"></div>
+
+      <div class="image-2"
+    ><img alt="Up arrow" src="./images/icon-up.svg"/> 175%
+     </div>
+
+    </div>
+
+  </div>
+
+  <div class="card-item-2">
+    <div class='top-content'>
+      <div><p>Likes </p></div>
+       <div class="num">101</div>
+      
+    </div>
+    <div class="bottom-content">
+      <div> <img src="./images/icon-youtube.svg"></div>
+
+      <div class="image-2"
+    ><img alt="Up arrow" src="./images/icon-up.svg"/> -55%
+     </div>
+
+    </div>
+
+  </div>
+
+  <div class="card-item-2">
+    <div class='top-content'>
+      <div><p>Total Views </p></div>
+       <div class="num">1247</div>
+      
+    </div>
+    <div class="bottom-content">
+      <div> <img src="./images/icon-youtube.svg"></div>
+
+      <div class="image-2"
+    ><img alt="Up arrow" src="./images/icon-up.svg"/> -25%
+     </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+    <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Yahaya Kehinde</a></p>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+ 
+ 
+ * {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+   font-family: 'Inter', sans-serif;
+  background-color: hsl(230, 17%, 14%)
+  
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: hsl(232, 19%, 15%);
+  padding: 40px;
+  
+}
+.header .text {
+  margin-left: 12px;
+  font-size: 20px;
+
+}
+
+.header .toggle {
+  margin-right: 10px;
+}
+
+.card {
+  background-color:  hsl(228, 28%, 20%);
+  height: 250px;
+  width: 250px;
+  border-top: 5px solid red;
+  margin-left: 10px;
+  margin-top: 34px;
+  border-radius: 9px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-cards {
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+.top-cards .card p:first-of-type {
+  margin-top: 40px;
+}
+
+.top-cards .card p {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 10px;
+ 
+}
+
+.top-cards .card .follower-number {
+  font-size: 50px;
+  color: hsl(0, 0%, 100%);
+
+}
+
+.top-cards .card .followers {
+  text-transform: uppercase;
+}
+
+
+/* Overview-cards */
+
+.overview-cards {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: space-evenly;
+  margin-left: 45px;
+  margin-bottom: 100px;
+}
+
+.card-item {
+  background-color:  hsl(228, 28%, 20%);
+  height: 250px;
+  width: 250px;
+  border-top: 5px solid red;
+  border-radius: 9px;
+  color: white;
+  display: flex;
+  /* justify-content: space-between; */
+  margin-left: 35px;
+}
+
+.top-content {
+  display: flex;
+ flex-direction: column;
+ margin-left: 20px;
+ margin-top: 30px;
+
+}
+.top-content p {
+  margin-bottom: 80px;
+  
+}
+.top-content .num {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+
+
+
+.bottom-content {
+ display: flex;
+ flex-direction: column;
+ margin-top: 30px;
+ margin-left: 80px;
+ 
+}
+
+.bottom-content .image-2 {
+  margin-top: 90px;
+}
+
+
+
+
+
+.overview p {
+  color: white;
+  margin-top: 50px;
+  margin-left: 60px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
+
+.overview-cards-2 {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: space-evenly;
+  margin-left: 45px;
+  margin-bottom: 150px;
+}
+
+.card-item-2 {
+  background-color:  hsl(228, 28%, 20%);
+  height: 250px;
+  width: 250px;
+  border-top: 5px solid red;
+  border-radius: 9px;
+  color: white;
+  display: flex;
+  margin-left: 35px;
+}
+
+.attribution p {
+  font-size: 14px;
+  color: #fff;
+}
+
+
+
+
+
+/*CREATING THE TOGGLE BUTTON*/
+
+body.change-color {
+  background-color: white;
+  
+}
+
+ 
+
+.label {
+  width: 44px;
+  height: 2px;
+  background-color: teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  padding: 2px;
+  position: relative;
+  transform: scale(1.1);
+  
+}
+
+.fa-sun {
+  color: #f1c40f 
+}
+
+.fa-moon {
+  color: black;
+}
+
+.ball {
+  width:22px;
+  height: 22px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+  
+}
+
+
+.checkbox:checked + .label .ball{
+  background-color: teal;
+  transform: translateX(24px);
+} 
+
+
+
+
+@media screen and (max-width: 768px) {
+  .card {
+    background-color:  hsl(228, 28%, 20%);
+    height: 280px;
+    width: 280px;
+    border-top: 5px solid red;
+    margin-left: 130px;
+    margin-top: 34px;
+    border-radius: 9px;
+    margin-bottom: 40px;
+  }
+  .top-cards {
+    display: flex;
+   flex-direction: column;
+  
+  }
+
+  .header .text {
+    margin-left: 20px;
+    font-size: 20px;
+  
+  }
+
+
+  .overview-cards {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .overview-cards .card-item {
+    margin-bottom: 60px;
+    margin-left: 95px;
+    height: 280px;
+    width: 280px;
+  }
+  .overview p {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 140px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+  }
+
+  .overview-cards-2 {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .overview-cards-2 .card-item-2 {
+    margin-bottom: 60px;
+    margin-left: 95px;
+    height: 280px;
+    width: 280px;
+  }
+
+  .overview p {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 140px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+  }
+
+
+
+}
+
